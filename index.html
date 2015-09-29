@@ -83,7 +83,7 @@
           <h3>{{stockOffering.employee}}</h3>
           <p class="lead">{{grant.options}} shares were granted on {{grant.date.toDateString()}} over {{grant.termYears}} years.</p>
           <p>It's been {{calculateMonthsSinceGrantDate(grant.date)}} months since grant.</p>
-          <p class="lead" style="color: {{stockGrants.vested==0?'red':'green'}}">
+          <p class="lead" style="color: {{grant.vested==0?'red':'green'}}">
             <strong>Vested Options:</strong> {{grant.vested}}
           </p>
         <hr>
